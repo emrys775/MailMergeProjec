@@ -1,0 +1,42 @@
+# Mail Merge Project
+
+This project automates the creation of personalized letters for a list of recipients by
+merging a provided template letter and a list of names. It is useful for scenarios where
+you need to send a large number of customized letters.
+
+## Features
+- Reads a starting letter template (`starting_letter.txt`) containing a placeholder `[name]`.
+- Reads a list of recipient names from `invited_names.txt`.
+- Replaces the placeholder `[name]` in the template with actual names from the list.
+- Saves the personalized letters in the `ReadyToSend` folder as individual `.txt` files.
+- Automatically ensures the output folder exists before saving the letters.
+
+## Requirements
+- Python 3.6 or higher.
+
+## Setup
+1. Clone or download this repository to your local machine.
+2. Ensure the following files are in the same directory as `main.py`:
+   - `starting_letter.txt`: The template letter containing `[name]` as the placeholder.
+   - `invited_names.txt`: A list of names (one name per line).
+3. When the program is executed, it will generate one letter for each name in the `ReadyToSend` folder.
+
+## How to Run
+1. Make sure your Python environment is set up and activated.
+2. Place the required files (`starting_letter.txt` and `invited_names.txt`) in the project root.
+3. Run the Python script:
+   ```bash
+   python main.py
+   ```
+4. After execution, check the `ReadyToSend` folder for the generated personalized letters.
+
+
+#TODO: Create a letter using starting_letter.txt
+#for each name in invited_names.txt
+#Replace the [name] placeholder with the actual name.
+#Save the letters in the folder "ReadyToSend".
+# from logging import PlaceHolder
+
+#Hint1: This method will help you: https://www.w3schools.com/python/ref_file_readlines.asp
+#Hint2: This method will also help you: https://www.w3schools.com/python/ref_string_replace.asp
+#Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
